@@ -1,6 +1,6 @@
 ﻿---
 name: research-study-report
-description: '生成《科研进度汇报》Word 文档：默认直接产出真正的 .docx（宋体正文/黑体标题、蓝条二级标题、浅蓝表头表格、A4 页边距 25/20mm），用户双击即可打开，不需要复制粘贴或改后缀名。当用户给出汇报周期、文献阅读、理论学习、知识补充、英语学习、累计用时、学习状态、后续规划等信息，并要求生成/整理学习汇报时使用。Generates the fixed-format Chinese graduate study-progress report as a real .docx file, or as HTML when explicitly requested.'
+description: '生成《科研进度汇报》Word 文档：默认直接产出真正的 .docx（宋体正文/黑体标题、蓝条二级标题、浅蓝表头表格、A4 页边距 25/20mm），用户双击即可打开，不需要复制粘贴或改后缀名。当用户给出汇报周期、文献/理论/补充/英语等学习内容（这四节是默认值，可用 contentSections 自定义）、累计用时、学习状态、后续规划等信息，并要求生成/整理学习汇报时使用。Generates the fixed-format Chinese graduate study-progress report as a real .docx file, or as HTML when explicitly requested.'
 ---
 
 # 技能：科研进度汇报生成器
@@ -14,6 +14,7 @@ description: '生成《科研进度汇报》Word 文档：默认直接产出真�
 - 文件名：`科研进度汇报_YYYY-MM-DD.docx`（日期为汇报日期），放在工作区的 `reports\` 目录下。
 - 文档标题固定为「科研进度汇报」；如需临时改动，由输入 JSON 的 `title` 字段覆盖。
 - 生成后用 `present` 交付这个 .docx 文件本身。
+- 「二、核心学习内容」下的（一）～（四）只是默认章节；用输入 JSON 的 `contentSections` 可整段替换成任意结构（见「自定义章节」）。
 
 ## 工作方式
 
